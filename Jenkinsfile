@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                
-                mvn clean
+               mvn install -DskipTests
             }
         }
         stage('Test') {
